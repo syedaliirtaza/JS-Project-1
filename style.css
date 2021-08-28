@@ -1,0 +1,35 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.display-calculator {
+    background-color: #EA3226;
+    border: 1px solid red;
+    border-radius: 5px;
+    height: 100px;
+}
+.display-number {
+    color: #5C5757;
+    font-weight: 800;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.number-calculator {
+    background-color: wheat;
+    border: 1px solid wheat;
+    height: 400px;
+}
+.number-calculator button{
+    background-color: grey;
+    border: 1px solid black;
+    padding: 20px;
+    color: white;
+    border-radius: 22px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 20px;
+    position: relative;
+    top: 10px;
+}
