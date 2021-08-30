@@ -1,9 +1,9 @@
-let buttonNumber = document.querySelectorAll(".btn-number");
-let buttonPlus = document.querySelector(".btn-plus");
-let buttonMinus = document.querySelector(".btn-minus");
-let buttonMultiply = document.querySelector(".btn-multiply");
-let buttonDivide = document.querySelector(".btn-divide");
-let buttonDot = document.querySelector(".btn-dot");
-let buttonEqual = document.querySelector(".btn-equal");
+function Display(val){
+    document.getElementById("text-val").value += val;
+}
 
-
+function evaluating(){
+    let x = document.getElementById("text-val").value;
+    let y = eval(x);
+    document.getElementById("text-val").value = y;
+}

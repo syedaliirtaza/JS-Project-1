@@ -17,35 +17,35 @@
                 <h1>Java-Script Calculator</h1>
             </div>
         </div>
-        <div class="row display-calculator">
+        <div class="row display-calculator mt-5">
             <div class="col-md-12 col-sm-12 col-lg-12">
-                <h1 class="display-number">0</h1>
+                <input class="display-number" id="text-val" type="text">
             </div>
         </div>
-        <div class="row number-calculator ">
+        <div class="row number-calculator">
             <div class="col-md-12 col-sm-12 col-lg-12 first-row">
-                <button class="btn-number" >7</button>
-                <button class="btn-number">8</button>
-                <button class="btn-number">9</button>
-                <button class="btn-plus">+</button>
+                <button class="btn-number" onClick="Display('7')" value="7">7</button>
+                <button class="btn-number"  onClick="Display('8')" value="8">8</button>
+                <button class="btn-number" onClick="Display('9')" value="9">9</button>
+                <button class="btn-plus" onClick="Display('+')" value="+">+</button>
             </div>
             <div class="col-md-12 col-sm-12 col-lg-12 second-row">
-                <button class="btn-number">4</button>
-                <button class="btn-number">5</button>
-                <button class="btn-number">6</button>
-                <button class="btn-minus">-</button>
+                <button class="btn-number" value="4" onClick="Display('4')">4</button>
+                <button class="btn-number" value="5" onClick="Display('5')">5</button>
+                <button class="btn-number" value="6" onClick="Display('6')">6</button>
+                <button class="btn-minus" value="-" onClick="Display('-')">-</button>
             </div>
             <div class="col-md-12 col-sm-12 col-lg-12 third-row">
-                <button class="btn-number">1</button>
-                <button class="btn-number">2</button>
-                <button class="btn-numer">3</button>
-                <button class="btn-multiply">*</button>
+                <button class="btn-number" value="1" onClick="Display('1')">1</button>
+                <button class="btn-number" value="2" onClick="Display('2')">2</button>
+                <button class="btn-numer" value="3" onClick="Display('3')">3</button>
+                <button class="btn-multiply" value="*" onClick="Display('*')">*</button>
             </div>
             <div class="col-md-12 col-sm-12 col-lg-12 fourth-row">
-                <button class="btn-number">0</button>
-                <button class="btn-dot">.</button>
-                <button class="btn-divide">/</button>
-                <button class="btn-equal">=</button>
+                <button class="btn-number" value="0" onClick="Display('0')">0</button>
+                <button class="btn-dot" value="." onClick="Display('.')">.</button>
+                <button class="btn-divide" value="/" onClick="Display('/')">/</button>
+                <button class="btn-equal" value="=" onClick="evaluating()">=</button>
             </div>
         </div>
     </div>
